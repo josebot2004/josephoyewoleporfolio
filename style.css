@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
 
-* {
+*{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -12,10 +12,27 @@
 }
 
 :root {
-    --bg-color: #1f242d;
-    --second-bg-color: #323946;
-    --text-color: #fff;
-    --main-color: #3498db;
+ --clr-primary: #339af0;
+    --clr-primary-shade: #1864ab;
+    --clr-primary-tint: #a5d8ff;
+
+    --clr-secondary: #fcc419;
+    --clr-secondary-shade: #f08c00;
+    --clr-secondary-tint: #fff3bf;
+
+    --clr-tertiary: #5c7cfa;
+    --clr-tertiary-shade: #364fc7;
+    --clr-tertiary-tint: #bac8ff;
+
+    --clr-grey: #adb5bd;
+    --clr-grey-shade: #212529;
+    --clr-grey-tint: #e9ecef;
+
+    --bg-color: var(--clr-secondary-tint);
+    --second-bg-color: var(--clr-primary-tint);
+    --text-color: var(--clr-grey-shade);
+    --heading-color: var(--clr-primary-shade);
+    --main-color: var(--clr-primary);
 }
 
 html {
@@ -508,5 +525,6 @@ span {
     .footer p {
         text-align:center;
         margin-top: 2rem;
+
     }
 }
